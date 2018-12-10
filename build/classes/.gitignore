@@ -1,0 +1,8 @@
+/applicationContext.xml
+/bean/
+/controller/
+/dao/
+/db.properties
+/log4j.properties
+/service/
+/springmvc.xml

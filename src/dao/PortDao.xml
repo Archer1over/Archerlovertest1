@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC   
+    "-//mybatis.org//DTD Mapper 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.PortDao">
+
+	<resultMap id="Port" type="bean.Port">
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="HTTP" jdbcType="INTEGER" property="http" />
+		<result column="FTP" jdbcType="INTEGER" property="ftp" />
+		<result column="DHCP" jdbcType="INTEGER" property="dhcp" />
+		<result column="Telnet" jdbcType="INTEGER" property="telnet" />
+		<result column="SMTP" jdbcType="INTEGER" property="smtp" />
+	</resultMap>
+
+	<select id="selectAll" resultMap="Port">
+		select * from port
+	</select>
+</mapper> 
+    
